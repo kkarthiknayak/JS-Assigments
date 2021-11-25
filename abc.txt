@@ -11,3 +11,7 @@ aaaaaaaaaaaa
 ffffffffffffff
 end of feature
 >>>>>>> new-crazy-branch
+
+
+Added new branch comment
+
