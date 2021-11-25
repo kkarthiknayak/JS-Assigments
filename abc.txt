@@ -1,5 +1,13 @@
 ffaksdaslkd
+<<<<<<< HEAD
 daswdddddddddddddd
 sssssssssss
 
 Original git
+Something is fishy
+=======
+ssssssssssssss
+aaaaaaaaaaaa
+ffffffffffffff
+end of feature
+>>>>>>> new-crazy-branch
