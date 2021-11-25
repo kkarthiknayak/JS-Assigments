@@ -13,4 +13,9 @@ end of feature
 >>>>>>> new-crazy-branch
 
 
+<<<<<<< HEAD
 Added comment to Original main 
+=======
+Added new branch comment
+Added Another new branch Comment
+>>>>>>> new-branch
