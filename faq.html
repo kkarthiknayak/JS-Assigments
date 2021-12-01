@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <!-- Load jQuery  -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+    <!-- Load WysiBB JS and Theme -->
+    <script src="./wysibb/jquery.wysibb.min.js"></script>
+    <link rel="stylesheet" href="./wysibb/theme/default/wbbtheme.css" />
+
+    <!-- Init WysiBB BBCode editor -->
+
+    <!-- <script src='./faq.js'></script> -->
+
+    
+</head>
+
+<body>
+    <textarea id="editor"></textarea>
+</body>
+
+<script>
+    $(document).ready(function() {
+    var wbbOpt = {
+      buttons: "bold,italic,underline,|,img,link,|,code,myquote",
+      allButtons: {
+        code: {
+          hotkey: "ctrl+shift+3", //Add hotkey
+          transform: {
+            '<div class="mycode"><div class="codetop">Code:</div><div class="codemain">{SELTEXT}</div></div>':'[code]{SELTEXT}[/code]'
+          }
+        }, 
+        quote: {
+      transform: {
+        '<div class="quote">{SELTEXT}</div>':'[quote]{SELTEXT}[/quote]',
+        '<div class="quote"><cite>{AUTHOR} wrote:</cite>{SELTEXT}</div>':'[quote={AUTHOR}]{SELTEXT}[/quote]'
+      }
+    },
+        myquote: {
+          title: 'Insert myquote',
+          buttonText: 'myquote',
+          transform: {
+            '<div class="myquote">{SELTEXT}</div>':'[myquote]{SELTEXT}[/myquote]'
+          }
+        }
+        
+      }
+      
+    }
+    $("#editor").wysibb(wbbOpt);
+    });
+</script>
+</html>
